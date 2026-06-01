@@ -1,5 +1,8 @@
 package net.partert.irevolution;
 
+import net.partert.irevolution.block.MBlocks;
+import net.partert.irevolution.item.MItems;
+import net.partert.irevolution.tabs.MTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -23,11 +26,17 @@ public class IndustrialRevolution {
 
         modEventBus.addListener(this::commonSetup);
 
+        MItems.register(modEventBus);
+        MBlocks.register(modEventBus);
+        MTabs.register(modEventBus);
+
         NeoForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        LOGGER.info("Content created! Welcome to INDUSTRIALIZATION!");
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
