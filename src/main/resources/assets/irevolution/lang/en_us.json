@@ -1,2 +1,12 @@
 {
+  "item.irevolution.raw_tin": "Raw Tin",
+  "item.irevolution.tin_ingot": "Tin Ingot",
+
+  "block.irevolution.raw_tin_block": "Block of Raw Tin",
+  "block.irevolution.tin_block": "Block of Tin",
+  "block.irevolution.tin_ore": "Tin Ore",
+  "block.irevolution.deepslate_tin_ore": "Deepslate Tin Ore",
+
+  "creativetab.irevolution.resources": "Industrial Revolution: Resources",
+  "creativetab.irevolution.machines": "Industrial Revolution: Machines"
 }
