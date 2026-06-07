@@ -27,6 +27,7 @@ public class MTabs {
                         output.accept(MBlocks.DEEPSLATE_TIN_ORE);
                         output.accept(MItems.RAW_TIN);
                         output.accept(MBlocks.RAW_TIN_BLOCK);
+                        output.accept(MItems.TIN_NUGGET);
                         output.accept(MItems.TIN_INGOT);
                         output.accept(MBlocks.TIN_BLOCK);
 
