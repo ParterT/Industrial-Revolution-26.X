@@ -30,6 +30,11 @@ public class MTabs {
                         output.accept(MItems.TIN_INGOT);
                         output.accept(MBlocks.TIN_BLOCK);
 
+                        output.accept(MBlocks.LIGNITE_ORE);
+                        output.accept(MBlocks.DEEPSLATE_LIGNITE_ORE);
+                        output.accept(MItems.LIGNITE);
+                        output.accept(MBlocks.LIGNITE_BLOCK);
+
                     }).build());
 
     public static final Supplier<CreativeModeTab> MACHINES = MOD_TABS.register("machines_tab",
