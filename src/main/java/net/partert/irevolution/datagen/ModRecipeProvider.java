@@ -48,6 +48,7 @@ public class ModRecipeProvider extends RecipeProvider {
     protected void buildRecipes() {
         modBlockStorageRecipe(RecipeCategory.MISC, MItems.RAW_TIN, RecipeCategory.BUILDING_BLOCKS, MBlocks.RAW_TIN_BLOCK);
         modBlockStorageRecipe(RecipeCategory.MISC, MItems.TIN_INGOT, RecipeCategory.BUILDING_BLOCKS, MBlocks.TIN_BLOCK);
+        modBlockStorageRecipe(RecipeCategory.MISC, MItems.TIN_NUGGET, RecipeCategory.MISC, MItems.TIN_INGOT);
         modBlockStorageRecipe(RecipeCategory.MISC, MItems.LIGNITE, RecipeCategory.BUILDING_BLOCKS, MBlocks.LIGNITE_BLOCK);
 
         oreSmelting(List.of(MItems.RAW_TIN, MBlocks.TIN_ORE, MBlocks.DEEPSLATE_TIN_ORE), RecipeCategory.MISC, CookingBookCategory.MISC, MItems.TIN_INGOT.get(), 0.25f, 200, "azurite_ingot");
@@ -58,18 +59,18 @@ public class ModRecipeProvider extends RecipeProvider {
 
 
 
-    protected void modBlockStorageRecipe(RecipeCategory unpackCategory, ItemLike item, RecipeCategory packCategory, ItemLike block) {
+    protected void modBlockStorageRecipe(RecipeCategory unpackCategory, ItemLike unpacked, RecipeCategory packCategory, ItemLike packed) {
 
-        this.shapeless(unpackCategory, item, 9).requires(block).group(BuiltInRegistries.ITEM.getKey(item.asItem()).getPath())
-                .unlockedBy(getHasName(block), this.has(block))
-                .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.parse(IndustrialRevolution.MODID+":"+BuiltInRegistries.ITEM.getKey(item.asItem()).getPath()+"_from_"+BuiltInRegistries.BLOCK.getKey(Block.byItem(block.asItem())).getPath())));
-        this.shaped(packCategory, block).define('#', item)
+        this.shapeless(unpackCategory, unpacked, 9).requires(packed).group(BuiltInRegistries.ITEM.getKey(unpacked.asItem()).getPath())
+                .unlockedBy(getHasName(packed), this.has(packed))
+                .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.parse(IndustrialRevolution.MODID+":"+BuiltInRegistries.ITEM.getKey(unpacked.asItem()).getPath()+"_from_"+BuiltInRegistries.BLOCK.getKey(Block.byItem(packed.asItem())).getPath())));
+        this.shaped(packCategory, packed).define('#', unpacked)
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
-                .group(BuiltInRegistries.BLOCK.getKey(Block.byItem(block.asItem())).getPath())
-                .unlockedBy(getHasName(item), this.has(item))
-                .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.parse(IndustrialRevolution.MODID+":"+BuiltInRegistries.BLOCK.getKey(Block.byItem(block.asItem())).getPath()+"_from_"+BuiltInRegistries.ITEM.getKey(item.asItem()).getPath())));
+                .group(BuiltInRegistries.BLOCK.getKey(Block.byItem(packed.asItem())).getPath())
+                .unlockedBy(getHasName(unpacked), this.has(unpacked))
+                .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.parse(IndustrialRevolution.MODID+":"+BuiltInRegistries.BLOCK.getKey(Block.byItem(packed.asItem())).getPath()+"_from_"+BuiltInRegistries.ITEM.getKey(unpacked.asItem()).getPath())));
 
     }
     protected <T extends AbstractCookingRecipe> void oreCooking(AbstractCookingRecipe.Factory<T> factory, List<ItemLike> smeltables,

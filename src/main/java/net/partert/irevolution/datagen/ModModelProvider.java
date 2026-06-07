@@ -18,6 +18,7 @@ public class ModModelProvider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModel) {
         itemModel.generateFlatItem(MItems.RAW_TIN.get(), ModelTemplates.FLAT_ITEM);
         itemModel.generateFlatItem(MItems.TIN_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModel.generateFlatItem(MItems.TIN_NUGGET.get(), ModelTemplates.FLAT_ITEM);
         itemModel.generateFlatItem(MItems.LIGNITE.get(), ModelTemplates.FLAT_ITEM);
 
         /* BLOCKS */
