@@ -1,11 +1,16 @@
 {
   "item.irevolution.raw_tin": "Raw Tin",
   "item.irevolution.tin_ingot": "Tin Ingot",
+  "item.irevolution.lignite": "Lignite",
 
   "block.irevolution.raw_tin_block": "Block of Raw Tin",
   "block.irevolution.tin_block": "Block of Tin",
+  "block.irevolution.lignite_block": "Block of Lignite",
+
   "block.irevolution.tin_ore": "Tin Ore",
   "block.irevolution.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.irevolution.lignite_ore": "Lignite Ore",
+  "block.irevolution.deepslate_lignite_ore": "Deepslate Lignite Ore",
 
   "creativetab.irevolution.resources": "Industrial Revolution: Resources",
   "creativetab.irevolution.machines": "Industrial Revolution: Machines"
