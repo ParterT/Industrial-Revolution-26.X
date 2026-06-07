@@ -11,6 +11,7 @@ public class MItems{
 
     public static  final DeferredItem<Item> RAW_TIN = ITEMS.registerSimpleItem("raw_tin");
     public static final  DeferredItem<Item> TIN_INGOT = ITEMS.registerSimpleItem("tin_ingot");
+    public static final  DeferredItem<Item> TIN_NUGGET = ITEMS.registerSimpleItem("tin_nugget");
 
     public static final  DeferredItem<Item> LIGNITE = ITEMS.registerSimpleItem("lignite");
 
