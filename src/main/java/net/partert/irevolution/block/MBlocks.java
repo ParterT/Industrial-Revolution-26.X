@@ -22,10 +22,23 @@ public class MBlocks {
     public static final DeferredBlock<Block> TIN_BLOCK = registerBlock("tin_block",
             properties ->  new Block(properties.requiresCorrectToolForDrops()
                     .strength(4f, 3f)));
+    public static final DeferredBlock<Block> LIGNITE_BLOCK = registerBlock("lignite_block",
+            properties ->  new Block(properties.requiresCorrectToolForDrops()
+                    .strength(5f, 6f)
+                    .ignitedByLava()));
+
     public static final DeferredBlock<Block> TIN_ORE = registerBlock("tin_ore",
             properties ->  new Block(properties.requiresCorrectToolForDrops()
                     .strength(3f, 3f)));
     public static final DeferredBlock<Block> DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore",
+            properties ->  new Block(properties.requiresCorrectToolForDrops()
+                    .strength(4.5f, 3f)
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> LIGNITE_ORE = registerBlock("lignite_ore",
+            properties ->  new Block(properties.requiresCorrectToolForDrops()
+                    .strength(3f, 3f)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_LIGNITE_ORE = registerBlock("deepslate_lignite_ore",
             properties ->  new Block(properties.requiresCorrectToolForDrops()
                     .strength(4.5f, 3f)
                     .sound(SoundType.DEEPSLATE)));
