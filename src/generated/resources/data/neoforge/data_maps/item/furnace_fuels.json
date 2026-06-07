@@ -1,0 +1,10 @@
+{
+  "values": {
+    "irevolution:lignite": {
+      "burn_time": 1200
+    },
+    "irevolution:lignite_block": {
+      "burn_time": 12000
+    }
+  }
+}
