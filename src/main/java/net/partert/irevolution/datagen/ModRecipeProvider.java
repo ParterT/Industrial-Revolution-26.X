@@ -15,6 +15,7 @@ import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.partert.irevolution.IndustrialRevolution;
 import net.partert.irevolution.block.MBlocks;
 import net.partert.irevolution.item.MItems;
@@ -60,18 +61,29 @@ public class ModRecipeProvider extends RecipeProvider {
 
 
     protected void modBlockStorageRecipe(RecipeCategory unpackCategory, ItemLike unpacked, RecipeCategory packCategory, ItemLike packed) {
+        String packedName = getPackedName(packed);
+        String unpackedName = BuiltInRegistries.ITEM.getKey(unpacked.asItem()).getPath();
 
-        this.shapeless(unpackCategory, unpacked, 9).requires(packed).group(BuiltInRegistries.ITEM.getKey(unpacked.asItem()).getPath())
+        this.shapeless(unpackCategory, unpacked, 9).requires(packed).group(unpackedName)
                 .unlockedBy(getHasName(packed), this.has(packed))
-                .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.parse(IndustrialRevolution.MODID+":"+BuiltInRegistries.ITEM.getKey(unpacked.asItem()).getPath()+"_from_"+BuiltInRegistries.BLOCK.getKey(Block.byItem(packed.asItem())).getPath())));
+                .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.parse(IndustrialRevolution.MODID+":"+unpackedName+"_from_"+packedName)));
         this.shaped(packCategory, packed).define('#', unpacked)
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
-                .group(BuiltInRegistries.BLOCK.getKey(Block.byItem(packed.asItem())).getPath())
+                .group(packedName)
                 .unlockedBy(getHasName(unpacked), this.has(unpacked))
-                .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.parse(IndustrialRevolution.MODID+":"+BuiltInRegistries.BLOCK.getKey(Block.byItem(packed.asItem())).getPath()+"_from_"+BuiltInRegistries.ITEM.getKey(unpacked.asItem()).getPath())));
+                .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.parse(IndustrialRevolution.MODID+":"+packedName+"_from_"+unpackedName)));
 
+    }
+
+    private String getPackedName(ItemLike packed) {
+        Block block = Block.byItem(packed.asItem());
+        if (block != Blocks.AIR) {
+            return BuiltInRegistries.BLOCK.getKey(block).getPath();
+        } else {
+            return BuiltInRegistries.ITEM.getKey(packed.asItem()).getPath();
+        }
     }
     protected <T extends AbstractCookingRecipe> void oreCooking(AbstractCookingRecipe.Factory<T> factory, List<ItemLike> smeltables,
                                                                 RecipeCategory craftingCategory, CookingBookCategory cookingCategory, ItemLike result,
