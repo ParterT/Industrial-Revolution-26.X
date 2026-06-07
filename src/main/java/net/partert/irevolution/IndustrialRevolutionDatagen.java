@@ -7,9 +7,7 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import net.partert.irevolution.datagen.ModBlockTagProvider;
-import net.partert.irevolution.datagen.ModLootTableProvider;
-import net.partert.irevolution.datagen.ModModelProvider;
+import net.partert.irevolution.datagen.*;
 
 import java.util.Collections;
 import java.util.List;
@@ -27,5 +25,7 @@ public class IndustrialRevolutionDatagen {
         gen.addProvider(true, new ModBlockTagProvider(packOutput, lookupProvider));
         gen.addProvider(true, new LootTableProvider(packOutput, Collections.emptySet(),
                 List.of(new LootTableProvider.SubProviderEntry(ModLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+        gen.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
+        gen.addProvider(true, new ModDataMapProvider(packOutput, lookupProvider));
     }
 }

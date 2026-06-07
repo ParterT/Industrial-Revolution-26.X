@@ -19,9 +19,13 @@ public class ModLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(MBlocks.RAW_TIN_BLOCK.get());
         dropSelf(MBlocks.TIN_BLOCK.get());
+        dropSelf(MBlocks.LIGNITE_BLOCK.get());
 
         add(MBlocks.TIN_ORE.get(), createOreDrop(MBlocks.TIN_ORE.get(), MItems.RAW_TIN.get()));
         add(MBlocks.DEEPSLATE_TIN_ORE.get(), createOreDrop(MBlocks.DEEPSLATE_TIN_ORE.get(), MItems.RAW_TIN.get()));
+
+        add(MBlocks.LIGNITE_ORE.get(), createOreDrop(MBlocks.LIGNITE_ORE.get(), MItems.LIGNITE.get()));
+        add(MBlocks.DEEPSLATE_LIGNITE_ORE.get(), createOreDrop(MBlocks.DEEPSLATE_LIGNITE_ORE.get(), MItems.LIGNITE.get()));
 
     }
 

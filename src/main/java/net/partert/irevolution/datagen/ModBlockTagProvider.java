@@ -19,8 +19,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .add(MBlocks.TIN_BLOCK.get())
             .add(MBlocks.RAW_TIN_BLOCK.get())
+            .add(MBlocks.LIGNITE_BLOCK.get())
+
             .add(MBlocks.TIN_ORE.get())
-            .add(MBlocks.DEEPSLATE_TIN_ORE.get());
+            .add(MBlocks.DEEPSLATE_TIN_ORE.get())
+            .add(MBlocks.LIGNITE_ORE.get())
+            .add(MBlocks.DEEPSLATE_LIGNITE_ORE.get());
 
     tag(BlockTags.NEEDS_STONE_TOOL)
             .add(MBlocks.TIN_BLOCK.get())

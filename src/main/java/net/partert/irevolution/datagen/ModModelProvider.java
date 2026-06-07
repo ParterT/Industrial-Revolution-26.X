@@ -18,11 +18,17 @@ public class ModModelProvider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModel) {
         itemModel.generateFlatItem(MItems.RAW_TIN.get(), ModelTemplates.FLAT_ITEM);
         itemModel.generateFlatItem(MItems.TIN_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModel.generateFlatItem(MItems.LIGNITE.get(), ModelTemplates.FLAT_ITEM);
 
         /* BLOCKS */
         blockModels.createTrivialCube(MBlocks.RAW_TIN_BLOCK.get());
         blockModels.createTrivialCube(MBlocks.TIN_BLOCK.get());
+        blockModels.createTrivialCube(MBlocks.LIGNITE_BLOCK.get());
+
         blockModels.createTrivialCube(MBlocks.TIN_ORE.get());
         blockModels.createTrivialCube(MBlocks.DEEPSLATE_TIN_ORE.get());
+
+        blockModels.createTrivialCube(MBlocks.LIGNITE_ORE.get());
+        blockModels.createTrivialCube(MBlocks.DEEPSLATE_LIGNITE_ORE.get());
     }
 }
