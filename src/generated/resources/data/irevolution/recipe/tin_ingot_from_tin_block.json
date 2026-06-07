@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "tin_ingot",
+  "ingredients": [
+    "irevolution:tin_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "irevolution:tin_ingot"
+  }
+}

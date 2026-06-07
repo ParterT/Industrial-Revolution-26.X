@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "lignite_block",
+  "key": {
+    "#": "irevolution:lignite"
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "irevolution:lignite_block"
+  }
+}

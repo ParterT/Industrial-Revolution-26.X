@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "lignite",
+  "ingredients": [
+    "irevolution:lignite_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "irevolution:lignite"
+  }
+}

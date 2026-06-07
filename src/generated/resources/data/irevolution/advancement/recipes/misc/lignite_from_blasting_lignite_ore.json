@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lignite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "irevolution:lignite_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "irevolution:lignite_from_blasting_lignite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lignite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "irevolution:lignite_from_blasting_lignite_ore"
+    ]
+  }
+}
