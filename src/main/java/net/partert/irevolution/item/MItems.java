@@ -12,6 +12,8 @@ public class MItems{
     public static  final DeferredItem<Item> RAW_TIN = ITEMS.registerSimpleItem("raw_tin");
     public static final  DeferredItem<Item> TIN_INGOT = ITEMS.registerSimpleItem("tin_ingot");
 
+    public static final  DeferredItem<Item> LIGNITE = ITEMS.registerSimpleItem("lignite");
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
