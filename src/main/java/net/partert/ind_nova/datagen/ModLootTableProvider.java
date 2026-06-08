@@ -1,12 +1,12 @@
-package net.partert.irevolution.datagen;
+package net.partert.ind_nova.datagen;
 
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
-import net.partert.irevolution.block.MBlocks;
-import net.partert.irevolution.item.MItems;
+import net.partert.ind_nova.block.MBlocks;
+import net.partert.ind_nova.item.MItems;
 
 import java.util.Set;
 

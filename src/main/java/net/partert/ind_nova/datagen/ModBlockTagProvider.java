@@ -1,17 +1,17 @@
-package net.partert.irevolution.datagen;
+package net.partert.ind_nova.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
-import net.partert.irevolution.IndustrialRevolution;
-import net.partert.irevolution.block.MBlocks;
+import net.partert.ind_nova.IndustriaNova;
+import net.partert.ind_nova.block.MBlocks;
 
 import java.util.concurrent.CompletableFuture;
 
 public class ModBlockTagProvider extends BlockTagsProvider {
     public ModBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
-        super(output, lookupProvider, IndustrialRevolution.MODID);
+        super(output, lookupProvider, IndustriaNova.MODID);
     }
 
     @Override

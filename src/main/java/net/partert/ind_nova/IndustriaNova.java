@@ -1,8 +1,8 @@
-package net.partert.irevolution;
+package net.partert.ind_nova;
 
-import net.partert.irevolution.block.MBlocks;
-import net.partert.irevolution.item.MItems;
-import net.partert.irevolution.tabs.MTabs;
+import net.partert.ind_nova.block.MBlocks;
+import net.partert.ind_nova.item.MItems;
+import net.partert.ind_nova.tabs.MTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -17,12 +17,12 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
-@Mod(IndustrialRevolution.MODID)
-public class IndustrialRevolution {
-    public static final String MODID = "irevolution";
+@Mod(IndustriaNova.MODID)
+public class IndustriaNova {
+    public static final String MODID = "ind_nova";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public IndustrialRevolution(IEventBus modEventBus, ModContainer modContainer) {
+    public IndustriaNova(IEventBus modEventBus, ModContainer modContainer) {
 
         modEventBus.addListener(this::commonSetup);
 

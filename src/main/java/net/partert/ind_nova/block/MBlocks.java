@@ -1,4 +1,4 @@
-package net.partert.irevolution.block;
+package net.partert.ind_nova.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
@@ -7,13 +7,13 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.partert.irevolution.IndustrialRevolution;
-import net.partert.irevolution.item.MItems;
+import net.partert.ind_nova.IndustriaNova;
+import net.partert.ind_nova.item.MItems;
 
 import java.util.function.Function;
 
 public class MBlocks {
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(IndustrialRevolution.MODID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(IndustriaNova.MODID);
 
     public static final DeferredBlock<Block> RAW_TIN_BLOCK = registerBlock("raw_tin_block",
             properties ->  new Block(properties.requiresCorrectToolForDrops()

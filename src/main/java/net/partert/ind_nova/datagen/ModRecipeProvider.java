@@ -1,4 +1,4 @@
-package net.partert.irevolution.datagen;
+package net.partert.ind_nova.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -16,9 +16,9 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.partert.irevolution.IndustrialRevolution;
-import net.partert.irevolution.block.MBlocks;
-import net.partert.irevolution.item.MItems;
+import net.partert.ind_nova.IndustriaNova;
+import net.partert.ind_nova.block.MBlocks;
+import net.partert.ind_nova.item.MItems;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -41,7 +41,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
         @Override
         public String getName() {
-            return "IndustrialRevolution Recipes";
+            return "IndustriaNova Recipes";
         }
     }
 
@@ -66,14 +66,14 @@ public class ModRecipeProvider extends RecipeProvider {
 
         this.shapeless(unpackCategory, unpacked, 9).requires(packed).group(unpackedName)
                 .unlockedBy(getHasName(packed), this.has(packed))
-                .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.parse(IndustrialRevolution.MODID+":"+unpackedName+"_from_"+packedName)));
+                .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.parse(IndustriaNova.MODID+":"+unpackedName+"_from_"+packedName)));
         this.shaped(packCategory, packed).define('#', unpacked)
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
                 .group(packedName)
                 .unlockedBy(getHasName(unpacked), this.has(unpacked))
-                .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.parse(IndustrialRevolution.MODID+":"+packedName+"_from_"+unpackedName)));
+                .save(this.output, ResourceKey.create(Registries.RECIPE, Identifier.parse(IndustriaNova.MODID+":"+packedName+"_from_"+unpackedName)));
 
     }
 
@@ -90,7 +90,7 @@ public class ModRecipeProvider extends RecipeProvider {
                                                                 float experience, int cookingTime, String group, String fromDesc) {
         for(ItemLike itemlike : smeltables) {
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), craftingCategory, cookingCategory, result, experience, cookingTime, factory).group(group).unlockedBy(getHasName(itemlike), has(itemlike))
-                    .save(output, IndustrialRevolution.MODID + ":" + getItemName(result) + fromDesc + "_" + getItemName(itemlike));
+                    .save(output, IndustriaNova.MODID + ":" + getItemName(result) + fromDesc + "_" + getItemName(itemlike));
         }
     }
 

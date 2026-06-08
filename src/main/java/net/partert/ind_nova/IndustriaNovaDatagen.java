@@ -1,4 +1,4 @@
-package net.partert.irevolution;
+package net.partert.ind_nova;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -7,13 +7,13 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import net.partert.irevolution.datagen.*;
+import net.partert.ind_nova.datagen.*;
 
 import java.util.Collections;
 import java.util.List;
 
-@EventBusSubscriber(modid = IndustrialRevolution.MODID)
-public class IndustrialRevolutionDatagen {
+@EventBusSubscriber(modid = IndustriaNova.MODID)
+public class IndustriaNovaDatagen {
     @SubscribeEvent
     public static void gatherClientData(GatherDataEvent.Client event) {
 

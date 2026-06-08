@@ -1,17 +1,17 @@
-package net.partert.irevolution.datagen;
+package net.partert.ind_nova.datagen;
 
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.data.PackOutput;
-import net.partert.irevolution.IndustrialRevolution;
-import net.partert.irevolution.block.MBlocks;
-import net.partert.irevolution.item.MItems;
+import net.partert.ind_nova.IndustriaNova;
+import net.partert.ind_nova.block.MBlocks;
+import net.partert.ind_nova.item.MItems;
 
 public class ModModelProvider extends ModelProvider {
     public ModModelProvider(PackOutput output) {
-        super(output, IndustrialRevolution.MODID);
+        super(output, IndustriaNova.MODID);
     }
 
     @Override
