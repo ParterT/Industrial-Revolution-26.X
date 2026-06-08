@@ -1,0 +1,18 @@
+{
+  "item.ind_nova.raw_tin": "Raw Tin",
+  "item.ind_nova.tin_ingot": "Tin Ingot",
+  "item.ind_nova.tin_nugget": "Tin Nugget",
+  "item.ind_nova.lignite": "Lignite",
+
+  "block.ind_nova.raw_tin_block": "Block of Raw Tin",
+  "block.ind_nova.tin_block": "Block of Tin",
+  "block.ind_nova.lignite_block": "Block of Lignite",
+
+  "block.ind_nova.tin_ore": "Tin Ore",
+  "block.ind_nova.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.ind_nova.lignite_ore": "Lignite Ore",
+  "block.ind_nova.deepslate_lignite_ore": "Deepslate Lignite Ore",
+
+  "creativetab.ind_nova.resources": "Industria Nova: Resources",
+  "creativetab.ind_nova.machines": "Industria Nova: Machines"
+}

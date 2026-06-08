@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "net.partert.irevolution.mixin",
+  "package": "net.partert.ind_nova.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [],
   "injectors": {
