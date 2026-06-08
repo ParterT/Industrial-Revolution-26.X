@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "lignite",
+  "ingredient": "ind_nova:deepslate_lignite_ore",
+  "result": {
+    "id": "ind_nova:lignite"
+  }
+}

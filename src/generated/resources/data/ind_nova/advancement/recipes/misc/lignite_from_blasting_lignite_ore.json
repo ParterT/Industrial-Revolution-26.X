@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lignite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ind_nova:lignite_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ind_nova:lignite_from_blasting_lignite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lignite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ind_nova:lignite_from_blasting_lignite_ore"
+    ]
+  }
+}

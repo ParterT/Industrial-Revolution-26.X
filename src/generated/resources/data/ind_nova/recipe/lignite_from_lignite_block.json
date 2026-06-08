@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "lignite",
+  "ingredients": [
+    "ind_nova:lignite_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ind_nova:lignite"
+  }
+}

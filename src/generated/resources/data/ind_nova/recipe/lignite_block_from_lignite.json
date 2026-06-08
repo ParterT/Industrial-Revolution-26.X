@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "lignite_block",
+  "key": {
+    "#": "ind_nova:lignite"
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "ind_nova:lignite_block"
+  }
+}
