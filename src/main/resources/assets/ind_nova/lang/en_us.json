@@ -1,17 +1,37 @@
 {
   "item.ind_nova.raw_tin": "Raw Tin",
+  "item.ind_nova.raw_platinum": "Raw Platinum",
+
+
   "item.ind_nova.tin_ingot": "Tin Ingot",
   "item.ind_nova.tin_nugget": "Tin Nugget",
+
+  "item.ind_nova.platinum_ingot": "Platinum Ingot",
+  "item.ind_nova.platinum_nugget": "Platinum Nugget",
+
+
   "item.ind_nova.lignite": "Lignite",
 
-  "block.ind_nova.raw_tin_block": "Block of Raw Tin",
-  "block.ind_nova.tin_block": "Block of Tin",
-  "block.ind_nova.lignite_block": "Block of Lignite",
 
   "block.ind_nova.tin_ore": "Tin Ore",
   "block.ind_nova.deepslate_tin_ore": "Deepslate Tin Ore",
+
   "block.ind_nova.lignite_ore": "Lignite Ore",
   "block.ind_nova.deepslate_lignite_ore": "Deepslate Lignite Ore",
+
+  "block.ind_nova.platinum_ore": "Platinum Ore",
+  "block.ind_nova.deepslate_platinum_ore": "Deepslate Platinum Ore",
+
+
+  "block.ind_nova.raw_tin_block": "Block of Raw Tin",
+  "block.ind_nova.tin_block": "Block of Tin",
+
+  "block.ind_nova.raw_platinum_block": "Block of Raw Platinum",
+  "block.ind_nova.platinum_block": "Block of Platinum",
+
+
+  "block.ind_nova.lignite_block": "Block of Lignite",
+
 
   "creativetab.ind_nova.resources": "Industria Nova: Resources",
   "creativetab.ind_nova.machines": "Industria Nova: Machines"
