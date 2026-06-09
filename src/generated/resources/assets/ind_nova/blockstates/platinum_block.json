@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ind_nova:block/platinum_block"
+    }
+  }
+}

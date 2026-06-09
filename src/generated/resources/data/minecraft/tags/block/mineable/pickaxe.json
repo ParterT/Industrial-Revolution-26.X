@@ -1,11 +1,15 @@
 {
   "values": [
-    "ind_nova:tin_block",
-    "ind_nova:raw_tin_block",
-    "ind_nova:lignite_block",
     "ind_nova:tin_ore",
     "ind_nova:deepslate_tin_ore",
     "ind_nova:lignite_ore",
-    "ind_nova:deepslate_lignite_ore"
+    "ind_nova:deepslate_lignite_ore",
+    "ind_nova:deepslate_platinum_ore",
+    "ind_nova:platinum_ore",
+    "ind_nova:tin_block",
+    "ind_nova:raw_tin_block",
+    "ind_nova:platinum_block",
+    "ind_nova:raw_platinum_block",
+    "ind_nova:lignite_block"
   ]
 }

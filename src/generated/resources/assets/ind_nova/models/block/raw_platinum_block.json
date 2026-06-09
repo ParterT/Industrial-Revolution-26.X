@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ind_nova:block/raw_platinum_block"
+  }
+}

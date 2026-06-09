@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_platinum_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ind_nova:platinum_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ind_nova:platinum_nugget_from_platinum_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_platinum_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ind_nova:platinum_nugget_from_platinum_ingot"
+    ]
+  }
+}

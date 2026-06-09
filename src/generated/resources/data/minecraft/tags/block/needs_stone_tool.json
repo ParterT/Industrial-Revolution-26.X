@@ -1,8 +1,8 @@
 {
   "values": [
-    "ind_nova:tin_block",
-    "ind_nova:raw_tin_block",
     "ind_nova:tin_ore",
-    "ind_nova:deepslate_tin_ore"
+    "ind_nova:deepslate_tin_ore",
+    "ind_nova:tin_block",
+    "ind_nova:raw_tin_block"
   ]
 }
