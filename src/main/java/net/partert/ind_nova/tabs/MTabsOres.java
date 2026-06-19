@@ -10,21 +10,21 @@ import net.partert.ind_nova.IndustriaNova;
 import net.partert.ind_nova.block.basic.MBlocksFuels;
 import net.partert.ind_nova.block.basic.MBlocksMetals;
 import net.partert.ind_nova.block.basic.MBlocksOres;
-import net.partert.ind_nova.item.MItemsFuels;
-import net.partert.ind_nova.item.MItemsMetals;
-import net.partert.ind_nova.item.MItemsOres;
+import net.partert.ind_nova.item.basic.MItemsFuels;
+import net.partert.ind_nova.item.basic.MItemsMetals;
+import net.partert.ind_nova.item.basic.MItemsOres;
 
 import java.util.function.Supplier;
 
-public class MTabsResources {
-    public static final DeferredRegister<CreativeModeTab> TAB_RESOURCES =
+public class MTabsOres {
+    public static final DeferredRegister<CreativeModeTab> TAB_ORES =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, IndustriaNova.MODID);
 
 
-    public static final Supplier<CreativeModeTab> RESOURCES = TAB_RESOURCES.register("resources_tab",
+    public static final Supplier<CreativeModeTab> ORES = TAB_ORES.register("ores_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(MItemsMetals.TIN_INGOT.get()))
-                    .title(Component.translatable("creativetab.ind_nova.resources"))
+                    .icon(() -> new ItemStack(MItemsOres.RAW_TIN.get()))
+                    .title(Component.translatable("creativetab.ind_nova.ores_tab"))
 
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(MBlocksOres.TIN_ORE);
@@ -50,6 +50,6 @@ public class MTabsResources {
 
                     }).build());
     public static void register(IEventBus eventBus) {
-        TAB_RESOURCES.register(eventBus);
+        TAB_ORES.register(eventBus);
     }
 }
