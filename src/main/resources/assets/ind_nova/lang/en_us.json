@@ -13,6 +13,17 @@
   "item.ind_nova.lignite": "Lignite",
 
 
+  "item.ind_nova.raw_flux": "Crushed Limestone",
+  "item.ind_nova.flux": "Flux",
+
+
+
+  "block.ind_nova.marble": "Marble",
+  "block.ind_nova.gabbro": "Gabbro",
+  "block.ind_nova.micaceous_schist": "Micaceous Schist",
+  "block.ind_nova.limestone": "Limestone",
+
+
   "block.ind_nova.tin_ore": "Tin Ore",
   "block.ind_nova.deepslate_tin_ore": "Deepslate Tin Ore",
 
@@ -33,6 +44,8 @@
   "block.ind_nova.lignite_block": "Block of Lignite",
 
 
-  "creativetab.ind_nova.resources": "Industria Nova: Resources",
-  "creativetab.ind_nova.machines": "Industria Nova: Machines"
+  "creativetab.ind_nova.machines_tab": "Industria Nova: Machines",
+  "creativetab.ind_nova.ores_tab": "Industria Nova: Ores",
+  "creativetab.ind_nova.materials_tab": "Industria Nova: Materials",
+  "creativetab.ind_nova.world_tab": "Industria Nova: World"
 }
