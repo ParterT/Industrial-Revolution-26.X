@@ -7,14 +7,28 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.partert.ind_nova.IndustriaNova;
-import net.partert.ind_nova.item.MItemsFuels;
+import net.partert.ind_nova.item.basic.MItemsFuels;
 
 import java.util.function.Function;
 
 public class MBlocksStones {
     public static final DeferredRegister.Blocks BLOCKS_STONES = DeferredRegister.createBlocks(IndustriaNova.MODID);
 
+    public static final DeferredBlock<Block> MARBLE = registerBlock("marble",
+            properties -> new Block(properties.requiresCorrectToolForDrops()
+                    .strength(1.5f, 6.0f)));
 
+    public static final DeferredBlock<Block> GABBRO = registerBlock("gabbro",
+            properties -> new Block(properties.requiresCorrectToolForDrops()
+                    .strength(1.5f, 6.0f)));
+
+    public static final DeferredBlock<Block> SCHIST = registerBlock("micaceous_schist",
+            properties -> new Block(properties.requiresCorrectToolForDrops()
+                    .strength(1.5f, 6.0f)));
+
+    public static final DeferredBlock<Block> LIMESTONE = registerBlock("limestone",
+            properties -> new Block(properties.requiresCorrectToolForDrops()
+                    .strength(1.5f, 6.0f)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
         DeferredBlock<T> toReturn = BLOCKS_STONES.registerBlock(name, function);
