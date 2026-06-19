@@ -1,6 +1,6 @@
-**_Industrial Revolution_**
+**_Industria Nova_**
 
-Industrial Revolution is a technology-focused mod that takes players on a journey from the primitive Stone Age to a highly advanced industrial future. Start with basic tools and manual labor, then gradually unlock new resources, machines, energy systems, and automation technologies.
+Industria Nova is a technology-focused mod that takes players on a journey from the primitive Stone Age to a highly advanced industrial future. Start with basic tools and manual labor, then gradually unlock new resources, machines, energy systems, and automation technologies.
 
 Every stage of progression introduces new mechanics and production chains, allowing you to build increasingly complex factories and automated systems.
 
