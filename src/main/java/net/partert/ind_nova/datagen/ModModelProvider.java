@@ -9,9 +9,11 @@ import net.partert.ind_nova.IndustriaNova;
 import net.partert.ind_nova.block.basic.MBlocksFuels;
 import net.partert.ind_nova.block.basic.MBlocksMetals;
 import net.partert.ind_nova.block.basic.MBlocksOres;
-import net.partert.ind_nova.item.MItemsFuels;
-import net.partert.ind_nova.item.MItemsMetals;
-import net.partert.ind_nova.item.MItemsOres;
+import net.partert.ind_nova.block.basic.MBlocksStones;
+import net.partert.ind_nova.item.basic.MItemsFuels;
+import net.partert.ind_nova.item.basic.MItemsMaterials;
+import net.partert.ind_nova.item.basic.MItemsMetals;
+import net.partert.ind_nova.item.basic.MItemsOres;
 
 public class ModModelProvider extends ModelProvider {
     public ModModelProvider(PackOutput output) {
@@ -32,12 +34,20 @@ public class ModModelProvider extends ModelProvider {
         itemModel.generateFlatItem(MItemsMetals.PLATINUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
         itemModel.generateFlatItem(MItemsMetals.PLATINUM_NUGGET.get(), ModelTemplates.FLAT_ITEM);
 
+        /* MATERIALS */
+        itemModel.generateFlatItem(MItemsMaterials.RAW_FLUX.get(), ModelTemplates.FLAT_ITEM);
+        itemModel.generateFlatItem(MItemsMaterials.FLUX.get(), ModelTemplates.FLAT_ITEM);
+
         /* FUELS */
         itemModel.generateFlatItem(MItemsFuels.LIGNITE.get(), ModelTemplates.FLAT_ITEM);
 
 
         //* BLOCKS *//
         /* STONES */
+        blockModels.createTrivialCube(MBlocksStones.MARBLE.get());
+        blockModels.createTrivialCube(MBlocksStones.GABBRO.get());
+        blockModels.createTrivialCube(MBlocksStones.SCHIST.get());
+        blockModels.createTrivialCube(MBlocksStones.LIMESTONE.get());
 
         /* ORES */
         blockModels.createTrivialCube(MBlocksOres.TIN_ORE.get());

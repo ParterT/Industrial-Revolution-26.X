@@ -6,7 +6,7 @@ import net.neoforged.neoforge.common.data.DataMapProvider;
 import net.neoforged.neoforge.registries.datamaps.builtin.FurnaceFuel;
 import net.neoforged.neoforge.registries.datamaps.builtin.NeoForgeDataMaps;
 import net.partert.ind_nova.block.basic.MBlocksFuels;
-import net.partert.ind_nova.item.MItemsFuels;
+import net.partert.ind_nova.item.basic.MItemsFuels;
 
 import java.util.concurrent.CompletableFuture;
 

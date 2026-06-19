@@ -9,8 +9,8 @@ import net.partert.ind_nova.block.basic.MBlocksFuels;
 import net.partert.ind_nova.block.basic.MBlocksMetals;
 import net.partert.ind_nova.block.basic.MBlocksOres;
 import net.partert.ind_nova.block.basic.MBlocksStones;
-import net.partert.ind_nova.item.MItemsFuels;
-import net.partert.ind_nova.item.MItemsOres;
+import net.partert.ind_nova.item.basic.MItemsFuels;
+import net.partert.ind_nova.item.basic.MItemsOres;
 
 import java.util.Collection;
 import java.util.Set;
@@ -24,6 +24,10 @@ public class ModLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         /* STONES */
+        dropSelf(MBlocksStones.MARBLE.get());
+        dropSelf(MBlocksStones.GABBRO.get());
+        dropSelf(MBlocksStones.SCHIST.get());
+        dropSelf(MBlocksStones.LIMESTONE.get());
         /* ORES */
         add(MBlocksOres.TIN_ORE.get(), createOreDrop(MBlocksOres.TIN_ORE.get(), MItemsOres.RAW_TIN.get()));
         add(MBlocksOres.DEEPSLATE_TIN_ORE.get(), createOreDrop(MBlocksOres.DEEPSLATE_TIN_ORE.get(), MItemsOres.RAW_TIN.get()));

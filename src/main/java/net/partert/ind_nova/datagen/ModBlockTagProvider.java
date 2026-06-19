@@ -8,6 +8,7 @@ import net.partert.ind_nova.IndustriaNova;
 import net.partert.ind_nova.block.basic.MBlocksFuels;
 import net.partert.ind_nova.block.basic.MBlocksMetals;
 import net.partert.ind_nova.block.basic.MBlocksOres;
+import net.partert.ind_nova.block.basic.MBlocksStones;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -20,6 +21,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
     tag(BlockTags.MINEABLE_WITH_PICKAXE)
             /* STONES */
+            .add(MBlocksStones.MARBLE.get())
+            .add(MBlocksStones.GABBRO.get())
+            .add(MBlocksStones.SCHIST.get())
+            .add(MBlocksStones.LIMESTONE.get())
 
             /* ORES */
             .add(MBlocksOres.TIN_ORE.get())

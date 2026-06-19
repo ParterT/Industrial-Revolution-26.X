@@ -20,9 +20,9 @@ import net.partert.ind_nova.IndustriaNova;
 import net.partert.ind_nova.block.basic.MBlocksFuels;
 import net.partert.ind_nova.block.basic.MBlocksMetals;
 import net.partert.ind_nova.block.basic.MBlocksOres;
-import net.partert.ind_nova.item.MItemsFuels;
-import net.partert.ind_nova.item.MItemsMetals;
-import net.partert.ind_nova.item.MItemsOres;
+import net.partert.ind_nova.item.basic.MItemsFuels;
+import net.partert.ind_nova.item.basic.MItemsMetals;
+import net.partert.ind_nova.item.basic.MItemsOres;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
