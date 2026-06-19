@@ -18,7 +18,7 @@ public class MTabsMachines {
     public static final Supplier<CreativeModeTab> MACHINES = TAB_MACHINES.register("machines_tab",
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(Blocks.REDSTONE_BLOCK))
-                    .title(Component.translatable("creativetab.ind_nova.machines"))
+                    .title(Component.translatable("creativetab.ind_nova.machines_tab"))
 
                     .build());
 

@@ -10,7 +10,7 @@ import net.partert.ind_nova.item.basic.MItemsMetals;
 import net.partert.ind_nova.item.basic.MItemsOres;
 import net.partert.ind_nova.tabs.MTabsMachines;
 import net.partert.ind_nova.tabs.MTabsMaterials;
-import net.partert.ind_nova.tabs.MTabsResources;
+import net.partert.ind_nova.tabs.MTabsOres;
 import net.partert.ind_nova.tabs.MTabsWorld;
 import org.slf4j.Logger;
 
@@ -47,7 +47,7 @@ public class IndustriaNova {
         MBlocksFuels.register(modEventBus);
 
         /* CREATIVE TABS REGISTER */
-        MTabsResources.register(modEventBus);
+        MTabsOres.register(modEventBus);
         MTabsMaterials.register(modEventBus);
         MTabsMachines.register(modEventBus);
         MTabsWorld.register(modEventBus);
