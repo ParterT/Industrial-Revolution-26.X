@@ -4,11 +4,14 @@ import net.partert.ind_nova.block.basic.MBlocksFuels;
 import net.partert.ind_nova.block.basic.MBlocksMetals;
 import net.partert.ind_nova.block.basic.MBlocksOres;
 import net.partert.ind_nova.block.basic.MBlocksStones;
-import net.partert.ind_nova.item.MItemsFuels;
-import net.partert.ind_nova.item.MItemsMetals;
-import net.partert.ind_nova.item.MItemsOres;
+import net.partert.ind_nova.item.basic.MItemsFuels;
+import net.partert.ind_nova.item.basic.MItemsMaterials;
+import net.partert.ind_nova.item.basic.MItemsMetals;
+import net.partert.ind_nova.item.basic.MItemsOres;
 import net.partert.ind_nova.tabs.MTabsMachines;
+import net.partert.ind_nova.tabs.MTabsMaterials;
 import net.partert.ind_nova.tabs.MTabsResources;
+import net.partert.ind_nova.tabs.MTabsWorld;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -35,6 +38,7 @@ public class IndustriaNova {
         MItemsFuels.register(modEventBus);
         MItemsMetals.register(modEventBus);
         MItemsOres.register(modEventBus);
+        MItemsMaterials.register(modEventBus);
 
         /* BLOCKS REGISTER */
         MBlocksStones.register(modEventBus);
@@ -44,7 +48,9 @@ public class IndustriaNova {
 
         /* CREATIVE TABS REGISTER */
         MTabsResources.register(modEventBus);
+        MTabsMaterials.register(modEventBus);
         MTabsMachines.register(modEventBus);
+        MTabsWorld.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
