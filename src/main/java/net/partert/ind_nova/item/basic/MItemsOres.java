@@ -1,4 +1,4 @@
-package net.partert.ind_nova.item;
+package net.partert.ind_nova.item.basic;
 
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
