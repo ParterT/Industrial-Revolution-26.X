@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "gabbro",
+  "key": {
+    "#": "ind_nova:gabbro"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ind_nova:gabbro_stairs"
+  }
+}

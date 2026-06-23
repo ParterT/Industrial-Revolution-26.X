@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "ind_nova:block/limestone",
+    "side": "ind_nova:block/limestone",
+    "top": "ind_nova:block/limestone"
+  }
+}

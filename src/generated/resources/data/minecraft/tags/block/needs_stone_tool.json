@@ -2,7 +2,11 @@
   "values": [
     "ind_nova:tin_ore",
     "ind_nova:deepslate_tin_ore",
+    "ind_nova:lead_ore",
+    "ind_nova:deepslate_lead_ore",
     "ind_nova:tin_block",
-    "ind_nova:raw_tin_block"
+    "ind_nova:raw_tin_block",
+    "ind_nova:lead_block",
+    "ind_nova:raw_lead_block"
   ]
 }

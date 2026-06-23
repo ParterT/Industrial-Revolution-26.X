@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gabbro": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ind_nova:gabbro"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ind_nova:gabbro_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gabbro"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ind_nova:gabbro_stairs"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "ind_nova:block/micaceous_schist",
+    "side": "ind_nova:block/micaceous_schist",
+    "top": "ind_nova:block/micaceous_schist"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "lead_ingot",
+  "key": {
+    "#": "ind_nova:lead_nugget"
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "ind_nova:lead_ingot"
+  }
+}

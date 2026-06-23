@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ind_nova:block/limestone_slab"
+    },
+    "type=double": {
+      "model": "ind_nova:block/limestone"
+    },
+    "type=top": {
+      "model": "ind_nova:block/limestone_slab_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ind_nova:block/micaceous_schist_slab"
+    },
+    "type=double": {
+      "model": "ind_nova:block/micaceous_schist"
+    },
+    "type=top": {
+      "model": "ind_nova:block/micaceous_schist_slab_top"
+    }
+  }
+}

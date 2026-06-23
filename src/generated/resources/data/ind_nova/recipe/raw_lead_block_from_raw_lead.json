@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "raw_lead_block",
+  "key": {
+    "#": "ind_nova:raw_lead"
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "ind_nova:raw_lead_block"
+  }
+}

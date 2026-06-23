@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "ind_nova:block/gabbro",
+    "side": "ind_nova:block/gabbro",
+    "top": "ind_nova:block/gabbro"
+  }
+}

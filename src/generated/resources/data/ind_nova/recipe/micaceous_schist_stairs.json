@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "micaceous_schist",
+  "key": {
+    "#": "ind_nova:micaceous_schist"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ind_nova:micaceous_schist_stairs"
+  }
+}
