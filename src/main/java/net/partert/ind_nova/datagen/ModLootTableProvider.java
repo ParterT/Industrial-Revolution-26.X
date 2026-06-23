@@ -23,11 +23,28 @@ public class ModLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        /* STONES */
+        //* STONES *//
+        /* BLOCKS */
         dropSelf(MBlocksStones.MARBLE.get());
         dropSelf(MBlocksStones.GABBRO.get());
         dropSelf(MBlocksStones.SCHIST.get());
         dropSelf(MBlocksStones.LIMESTONE.get());
+
+        /* STAIRS */
+        dropSelf(MBlocksStones.MARBLE_STAIRS.get());
+        dropSelf(MBlocksStones.GABBRO_STAIRS.get());
+        dropSelf(MBlocksStones.SCHIST_STAIRS.get());
+        dropSelf(MBlocksStones.LIMESTONE_STAIRS.get());
+
+        /* SLABS */
+        add(MBlocksStones.MARBLE_SLAB.get(), this::createSlabItemTable);
+        add(MBlocksStones.GABBRO_SLAB.get(), this::createSlabItemTable);
+        add(MBlocksStones.SCHIST_SLAB.get(), this::createSlabItemTable);
+        add(MBlocksStones.LIMESTONE_SLAB.get(), this::createSlabItemTable);
+
+        /* WALLS */
+
+
         /* ORES */
         add(MBlocksOres.TIN_ORE.get(), createOreDrop(MBlocksOres.TIN_ORE.get(), MItemsOres.RAW_TIN.get()));
         add(MBlocksOres.DEEPSLATE_TIN_ORE.get(), createOreDrop(MBlocksOres.DEEPSLATE_TIN_ORE.get(), MItemsOres.RAW_TIN.get()));
@@ -38,12 +55,18 @@ public class ModLootTableProvider extends BlockLootSubProvider {
         add(MBlocksOres.PLATINUM_ORE.get(), createOreDrop(MBlocksOres.PLATINUM_ORE.get(), MItemsOres.RAW_PLATINUM.get()));
         add(MBlocksOres.DEEPSLATE_PLATINUM_ORE.get(), createOreDrop(MBlocksOres.DEEPSLATE_PLATINUM_ORE.get(), MItemsOres.RAW_PLATINUM.get()));
 
+        add(MBlocksOres.LEAD_ORE.get(), createOreDrop(MBlocksOres.LEAD_ORE.get(), MItemsOres.RAW_LEAD.get()));
+        add(MBlocksOres.DEEPSLATE_LEAD_ORE.get(), createOreDrop(MBlocksOres.DEEPSLATE_LEAD_ORE.get(), MItemsOres.RAW_LEAD.get()));
+
         /* METALS */
         dropSelf(MBlocksMetals.RAW_TIN_BLOCK.get());
         dropSelf(MBlocksMetals.TIN_BLOCK.get());
 
         dropSelf(MBlocksMetals.RAW_PLATINUM_BLOCK.get());
         dropSelf(MBlocksMetals.PLATINUM_BLOCK.get());
+
+        dropSelf(MBlocksMetals.RAW_LEAD_BLOCK.get());
+        dropSelf(MBlocksMetals.LEAD_BLOCK.get());
 
         /* FUELS */
         dropSelf(MBlocksFuels.LIGNITE_BLOCK.get());

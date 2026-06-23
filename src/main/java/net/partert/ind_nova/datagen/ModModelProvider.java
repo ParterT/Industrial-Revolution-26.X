@@ -26,6 +26,7 @@ public class ModModelProvider extends ModelProvider {
         /* ORES */
         itemModel.generateFlatItem(MItemsOres.RAW_TIN.get(), ModelTemplates.FLAT_ITEM);
         itemModel.generateFlatItem(MItemsOres.RAW_PLATINUM.get(), ModelTemplates.FLAT_ITEM);
+        itemModel.generateFlatItem(MItemsOres.RAW_LEAD.get(), ModelTemplates.FLAT_ITEM);
 
         /* METALS */
         itemModel.generateFlatItem(MItemsMetals.TIN_INGOT.get(), ModelTemplates.FLAT_ITEM);
@@ -33,6 +34,9 @@ public class ModModelProvider extends ModelProvider {
 
         itemModel.generateFlatItem(MItemsMetals.PLATINUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
         itemModel.generateFlatItem(MItemsMetals.PLATINUM_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModel.generateFlatItem(MItemsMetals.LEAD_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModel.generateFlatItem(MItemsMetals.LEAD_NUGGET.get(), ModelTemplates.FLAT_ITEM);
 
         /* MATERIALS */
         itemModel.generateFlatItem(MItemsMaterials.RAW_FLUX.get(), ModelTemplates.FLAT_ITEM);
@@ -44,10 +48,18 @@ public class ModModelProvider extends ModelProvider {
 
         //* BLOCKS *//
         /* STONES */
-        blockModels.createTrivialCube(MBlocksStones.MARBLE.get());
-        blockModels.createTrivialCube(MBlocksStones.GABBRO.get());
-        blockModels.createTrivialCube(MBlocksStones.SCHIST.get());
-        blockModels.createTrivialCube(MBlocksStones.LIMESTONE.get());
+        blockModels.family(MBlocksStones.MARBLE.get())
+                .stairs(MBlocksStones.MARBLE_STAIRS.get())
+                .slab(MBlocksStones.MARBLE_SLAB.get());
+        blockModels.family(MBlocksStones.GABBRO.get())
+                .stairs(MBlocksStones.GABBRO_STAIRS.get())
+                .slab(MBlocksStones.GABBRO_SLAB.get());
+        blockModels.family(MBlocksStones.SCHIST.get())
+                .stairs(MBlocksStones.SCHIST_STAIRS.get())
+                .slab(MBlocksStones.SCHIST_SLAB.get());
+        blockModels.family(MBlocksStones.LIMESTONE.get())
+                .stairs(MBlocksStones.LIMESTONE_STAIRS.get())
+                .slab(MBlocksStones.LIMESTONE_SLAB.get());
 
         /* ORES */
         blockModels.createTrivialCube(MBlocksOres.TIN_ORE.get());
@@ -59,12 +71,18 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createTrivialCube(MBlocksOres.LIGNITE_ORE.get());
         blockModels.createTrivialCube(MBlocksOres.DEEPSLATE_LIGNITE_ORE.get());
 
+        blockModels.createTrivialCube(MBlocksOres.LEAD_ORE.get());
+        blockModels.createTrivialCube(MBlocksOres.DEEPSLATE_LEAD_ORE.get());
+
         /* METALS */
         blockModels.createTrivialCube(MBlocksMetals.RAW_TIN_BLOCK.get());
         blockModels.createTrivialCube(MBlocksMetals.TIN_BLOCK.get());
 
         blockModels.createTrivialCube(MBlocksMetals.RAW_PLATINUM_BLOCK.get());
         blockModels.createTrivialCube(MBlocksMetals.PLATINUM_BLOCK.get());
+
+        blockModels.createTrivialCube(MBlocksMetals.RAW_LEAD_BLOCK.get());
+        blockModels.createTrivialCube(MBlocksMetals.LEAD_BLOCK.get());
 
         /* FUELS */
         blockModels.createTrivialCube(MBlocksFuels.LIGNITE_BLOCK.get());

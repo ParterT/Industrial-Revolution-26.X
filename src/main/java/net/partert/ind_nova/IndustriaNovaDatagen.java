@@ -28,5 +28,6 @@ public class IndustriaNovaDatagen {
                 List.of(new LootTableProvider.SubProviderEntry(ModLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
         gen.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
         gen.addProvider(true, new ModDataMapProvider(packOutput, lookupProvider));
+        gen.addProvider(true, new ModItemTagProvider(packOutput, lookupProvider));
     }
 }

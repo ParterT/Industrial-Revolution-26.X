@@ -20,6 +20,7 @@ import net.partert.ind_nova.IndustriaNova;
 import net.partert.ind_nova.block.basic.MBlocksFuels;
 import net.partert.ind_nova.block.basic.MBlocksMetals;
 import net.partert.ind_nova.block.basic.MBlocksOres;
+import net.partert.ind_nova.block.basic.MBlocksStones;
 import net.partert.ind_nova.item.basic.MItemsFuels;
 import net.partert.ind_nova.item.basic.MItemsMetals;
 import net.partert.ind_nova.item.basic.MItemsOres;
@@ -61,18 +62,50 @@ public class ModRecipeProvider extends RecipeProvider {
         modBlockStorageRecipe(RecipeCategory.MISC, MItemsMetals.PLATINUM_INGOT, RecipeCategory.BUILDING_BLOCKS, MBlocksMetals.PLATINUM_BLOCK);
         modBlockStorageRecipe(RecipeCategory.MISC, MItemsMetals.PLATINUM_NUGGET, RecipeCategory.MISC, MItemsMetals.PLATINUM_INGOT);
 
+        modBlockStorageRecipe(RecipeCategory.MISC, MItemsOres.RAW_LEAD, RecipeCategory.BUILDING_BLOCKS, MBlocksMetals.RAW_LEAD_BLOCK);
+        modBlockStorageRecipe(RecipeCategory.MISC, MItemsMetals.LEAD_INGOT, RecipeCategory.BUILDING_BLOCKS, MBlocksMetals.LEAD_BLOCK);
+        modBlockStorageRecipe(RecipeCategory.MISC, MItemsMetals.LEAD_NUGGET, RecipeCategory.MISC, MItemsMetals.LEAD_INGOT);
+
+
         oreSmelting(List.of(MItemsOres.RAW_TIN, MBlocksOres.TIN_ORE, MBlocksOres.DEEPSLATE_TIN_ORE),
                 RecipeCategory.MISC, CookingBookCategory.MISC, MItemsMetals.TIN_INGOT.get(),
                 0.25f, 200, "azurite_ingot");
         oreBlasting(List.of(MItemsOres.RAW_TIN, MBlocksOres.TIN_ORE, MBlocksOres.DEEPSLATE_TIN_ORE),
                 RecipeCategory.MISC, CookingBookCategory.MISC, MItemsMetals.TIN_INGOT.get(),
                 0.25f, 100, "azurite_ingot");
+
         oreSmelting(List.of(MBlocksOres.LIGNITE_ORE, MBlocksOres.DEEPSLATE_LIGNITE_ORE),
                 RecipeCategory.MISC, CookingBookCategory.MISC, MItemsFuels.LIGNITE.get(),
                 0.25f, 200, "lignite");
         oreBlasting(List.of(MBlocksOres.LIGNITE_ORE, MBlocksOres.DEEPSLATE_LIGNITE_ORE),
                 RecipeCategory.MISC, CookingBookCategory.MISC, MItemsFuels.LIGNITE.get(),
                 0.25f, 100, "lignite");
+
+        oreSmelting(List.of(MItemsOres.RAW_LEAD, MBlocksOres.LEAD_ORE, MBlocksOres.DEEPSLATE_LEAD_ORE),
+                RecipeCategory.MISC, CookingBookCategory.MISC, MItemsMetals.LEAD_INGOT.get(),
+                0.25f, 200, "azurite_ingot");
+        oreBlasting(List.of(MItemsOres.RAW_LEAD, MBlocksOres.LEAD_ORE, MBlocksOres.DEEPSLATE_LEAD_ORE),
+                RecipeCategory.MISC, CookingBookCategory.MISC, MItemsMetals.LEAD_INGOT.get(),
+                0.25f, 100, "azurite_ingot");
+
+
+        stairBuilder(MBlocksStones.MARBLE_STAIRS.get(), Ingredient.of(MBlocksStones.MARBLE))
+                .unlockedBy(getHasName(MBlocksStones.MARBLE.get()), has(MBlocksStones.MARBLE))
+                .group("marble").save(output);
+        stairBuilder(MBlocksStones.GABBRO_STAIRS.get(), Ingredient.of(MBlocksStones.GABBRO))
+                .unlockedBy(getHasName(MBlocksStones.GABBRO.get()), has(MBlocksStones.GABBRO))
+                .group("gabbro").save(output);
+        stairBuilder(MBlocksStones.SCHIST_STAIRS.get(), Ingredient.of(MBlocksStones.SCHIST))
+                .unlockedBy(getHasName(MBlocksStones.SCHIST.get()), has(MBlocksStones.SCHIST))
+                .group("micaceous_schist").save(output);
+        stairBuilder(MBlocksStones.LIMESTONE_STAIRS.get(), Ingredient.of(MBlocksStones.LIMESTONE))
+                .unlockedBy(getHasName(MBlocksStones.LIMESTONE.get()), has(MBlocksStones.LIMESTONE))
+                .group("limestone").save(output);
+
+        slab(RecipeCategory.BUILDING_BLOCKS, MBlocksStones.MARBLE_SLAB.get(), MBlocksStones.MARBLE.get());
+        slab(RecipeCategory.BUILDING_BLOCKS, MBlocksStones.GABBRO_SLAB.get(), MBlocksStones.GABBRO.get());
+        slab(RecipeCategory.BUILDING_BLOCKS, MBlocksStones.SCHIST_SLAB.get(), MBlocksStones.SCHIST.get());
+        slab(RecipeCategory.BUILDING_BLOCKS, MBlocksStones.LIMESTONE_SLAB.get(), MBlocksStones.LIMESTONE.get());
     }
 
 
