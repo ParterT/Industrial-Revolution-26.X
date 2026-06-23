@@ -1,5 +1,6 @@
 package net.partert.ind_nova;
 
+import net.partert.ind_nova.attachment.MAttachments;
 import net.partert.ind_nova.block.basic.MBlocksFuels;
 import net.partert.ind_nova.block.basic.MBlocksMetals;
 import net.partert.ind_nova.block.basic.MBlocksOres;
@@ -51,6 +52,9 @@ public class IndustriaNova {
         MTabsMaterials.register(modEventBus);
         MTabsMachines.register(modEventBus);
         MTabsWorld.register(modEventBus);
+
+        /* ATTACHMENTS */
+        MAttachments.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
