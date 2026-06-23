@@ -12,29 +12,29 @@ _Planned Roadmap_
 
 **Early Progression**
 
--Basic ores, resources, and their primary processing
--Tools and armor sets
+-Basic ores, resources, and their primary processing\
+-Tools and armor sets\
 -Primitive hand-powered mechanisms
 
 **Industrial Development**
 
--Thermal and combustion-powered machines
--Steam Age machinery
+-Thermal and combustion-powered machines\
+-Steam Age machinery\
 -First electricity-generating machines
 
 **Energy & Logistics**
 
--Fluid and gas transportation through pipes
--Energy storage and transmission using batteries and wires
--Advanced heat distribution systems
--Conveyor belts for item transportation
+-Fluid and gas transportation through pipes\
+-Energy storage and transmission using batteries and wires\
+-Advanced heat distribution systems\
+-Conveyor belts for item transportation\
 -Expanded fluid management systems
 
 **Long-Term Goals**
 
--Large-scale factory automation
--Complex production chains
--Advanced power generation
+-Large-scale factory automation\
+-Complex production chains\
+-Advanced power generation\
 -High-tech industrial infrastructure
 
 _The roadmap is not final and may change during development._
