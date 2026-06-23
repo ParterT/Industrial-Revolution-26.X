@@ -48,6 +48,14 @@ public class MTabsOres {
                         output.accept(MItemsMetals.PLATINUM_INGOT);
                         output.accept(MBlocksMetals.PLATINUM_BLOCK);
 
+                        output.accept(MBlocksOres.LEAD_ORE);
+                        output.accept(MBlocksOres.DEEPSLATE_LEAD_ORE);
+                        output.accept(MItemsOres.RAW_LEAD);
+                        output.accept(MBlocksMetals.RAW_LEAD_BLOCK);
+                        output.accept(MItemsMetals.LEAD_NUGGET);
+                        output.accept(MItemsMetals.LEAD_INGOT);
+                        output.accept(MBlocksMetals.LEAD_BLOCK);
+
                     }).build());
     public static void register(IEventBus eventBus) {
         TAB_ORES.register(eventBus);

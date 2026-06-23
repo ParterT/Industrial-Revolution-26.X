@@ -35,11 +35,20 @@ public class MBlocksOres {
     public static final DeferredBlock<Block> PLATINUM_ORE = registerBlock("platinum_ore",
             properties ->  new Block(properties.requiresCorrectToolForDrops()
                     .strength(6f, 6f)));
-
     public static final DeferredBlock<Block> DEEPSLATE_PLATINUM_ORE = registerBlock("deepslate_platinum_ore",
             properties ->  new Block(properties.requiresCorrectToolForDrops()
                     .strength(9f, 6f)
                     .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LEAD_ORE = registerBlock("lead_ore",
+            properties ->  new Block(properties.requiresCorrectToolForDrops()
+                    .strength(3f, 3f)));
+    public static final DeferredBlock<Block> DEEPSLATE_LEAD_ORE = registerBlock("deepslate_lead_ore",
+            properties ->  new Block(properties.requiresCorrectToolForDrops()
+                    .strength(4.5f, 3f)
+                    .sound(SoundType.DEEPSLATE)));
+
+
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {

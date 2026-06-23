@@ -12,6 +12,7 @@ public class MItemsOres {
 
     public static  final DeferredItem<Item> RAW_TIN = ITEMS_ORES.registerSimpleItem("raw_tin");
     public static  final DeferredItem<Item> RAW_PLATINUM = ITEMS_ORES.registerSimpleItem("raw_platinum");
+    public static  final DeferredItem<Item> RAW_LEAD = ITEMS_ORES.registerSimpleItem("raw_lead");
 
 
     public static void register(IEventBus eventBus) {

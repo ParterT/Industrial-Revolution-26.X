@@ -28,6 +28,13 @@ public class MBlocksMetals {
             properties ->  new Block(properties.requiresCorrectToolForDrops()
                     .strength(15f, 8f)));
 
+    public static final DeferredBlock<Block> RAW_LEAD_BLOCK = registerBlock("raw_lead_block",
+            properties ->  new Block(properties.requiresCorrectToolForDrops()
+                    .strength(6f, 4f)));
+    public static final DeferredBlock<Block> LEAD_BLOCK = registerBlock("lead_block",
+            properties ->  new Block(properties.requiresCorrectToolForDrops()
+                    .strength(6f, 4f)));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
         DeferredBlock<T> toReturn = BLOCKS_METALS.registerBlock(name, function);
