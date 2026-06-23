@@ -1,6 +1,7 @@
 {
   "item.ind_nova.raw_tin": "Raw Tin",
   "item.ind_nova.raw_platinum": "Raw Platinum",
+  "item.ind_nova.raw_lead": "Raw Lead",
 
 
   "item.ind_nova.tin_ingot": "Tin Ingot",
@@ -8,6 +9,9 @@
 
   "item.ind_nova.platinum_ingot": "Platinum Ingot",
   "item.ind_nova.platinum_nugget": "Platinum Nugget",
+
+  "item.ind_nova.lead_ingot": "Lead Ingot",
+  "item.ind_nova.lead_nugget": "Lead Nugget",
 
 
   "item.ind_nova.lignite": "Lignite",
@@ -23,6 +27,16 @@
   "block.ind_nova.micaceous_schist": "Micaceous Schist",
   "block.ind_nova.limestone": "Limestone",
 
+  "block.ind_nova.marble_stairs": "Marble Stairs",
+  "block.ind_nova.gabbro_stairs": "Gabbro Stairs",
+  "block.ind_nova.micaceous_schist_stairs": "Micaceous Schist Stairs",
+  "block.ind_nova.limestone_stairs": "Limestone Stairs",
+
+  "block.ind_nova.marble_slab": "Marble Slab",
+  "block.ind_nova.gabbro_slab": "Gabbro Slab",
+  "block.ind_nova.micaceous_schist_slab": "Micaceous Schist Slab",
+  "block.ind_nova.limestone_slab": "Limestone Slab",
+
 
   "block.ind_nova.tin_ore": "Tin Ore",
   "block.ind_nova.deepslate_tin_ore": "Deepslate Tin Ore",
@@ -33,6 +47,9 @@
   "block.ind_nova.platinum_ore": "Platinum Ore",
   "block.ind_nova.deepslate_platinum_ore": "Deepslate Platinum Ore",
 
+  "block.ind_nova.lead_ore": "Lead Ore",
+  "block.ind_nova.deepslate_lead_ore": "Deepslate Lead Ore",
+
 
   "block.ind_nova.raw_tin_block": "Block of Raw Tin",
   "block.ind_nova.tin_block": "Block of Tin",
@@ -40,8 +57,12 @@
   "block.ind_nova.raw_platinum_block": "Block of Raw Platinum",
   "block.ind_nova.platinum_block": "Block of Platinum",
 
+  "block.ind_nova.raw_lead_block": "Block of Raw Lead",
+  "block.ind_nova.lead_block": "Block of Lead",
+
 
   "block.ind_nova.lignite_block": "Block of Lignite",
+
 
 
   "creativetab.ind_nova.machines_tab": "Industria Nova: Machines",
