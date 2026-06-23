@@ -21,9 +21,17 @@ public class MTabsWorld {
                     .title(Component.translatable("creativetab.ind_nova.world_tab"))
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(MBlocksStones.MARBLE);
+                        output.accept(MBlocksStones.MARBLE_STAIRS);
+                        output.accept(MBlocksStones.MARBLE_SLAB);
                         output.accept(MBlocksStones.GABBRO);
+                        output.accept(MBlocksStones.GABBRO_STAIRS);
+                        output.accept(MBlocksStones.GABBRO_SLAB);
                         output.accept(MBlocksStones.SCHIST);
+                        output.accept(MBlocksStones.SCHIST_STAIRS);
+                        output.accept(MBlocksStones.SCHIST_SLAB);
                         output.accept(MBlocksStones.LIMESTONE);
+                        output.accept(MBlocksStones.LIMESTONE_STAIRS);
+                        output.accept(MBlocksStones.LIMESTONE_SLAB);
                     })).build());
 
     public static void register(IEventBus eventBus) {
