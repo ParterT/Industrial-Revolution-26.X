@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "golden_hammer",
+  "key": {
+    "I": "minecraft:gold_ingot",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "III",
+    "III",
+    " S "
+  ],
+  "result": {
+    "id": "ind_nova:golden_hammer"
+  }
+}

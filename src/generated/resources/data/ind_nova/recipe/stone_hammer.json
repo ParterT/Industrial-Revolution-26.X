@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "stone_hammer",
+  "key": {
+    "I": "minecraft:cobblestone",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "III",
+    "III",
+    " S "
+  ],
+  "result": {
+    "id": "ind_nova:stone_hammer"
+  }
+}

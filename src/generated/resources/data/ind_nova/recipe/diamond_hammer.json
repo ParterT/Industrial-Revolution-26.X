@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "diamond_hammer",
+  "key": {
+    "D": "minecraft:diamond",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "DDD",
+    "DDD",
+    " S "
+  ],
+  "result": {
+    "id": "ind_nova:diamond_hammer"
+  }
+}

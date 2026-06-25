@@ -3,7 +3,7 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.25,
-  "group": "azurite_ingot",
+  "group": "tin_ingot",
   "ingredient": "ind_nova:raw_tin",
   "result": {
     "id": "ind_nova:tin_ingot"

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "steel_hammer",
+  "key": {
+    "I": "ind_nova:steel_ingot",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "III",
+    "III",
+    " S "
+  ],
+  "result": {
+    "id": "ind_nova:steel_hammer"
+  }
+}

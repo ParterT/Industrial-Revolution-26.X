@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "steel_spear",
+  "key": {
+    "I": "ind_nova:steel_ingot",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "  I",
+    " S ",
+    "S  "
+  ],
+  "result": {
+    "id": "ind_nova:steel_spear"
+  }
+}
