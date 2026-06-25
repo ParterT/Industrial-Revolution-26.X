@@ -1,0 +1,93 @@
+{
+  "item.ind_nova.raw_tin": "Рудное олово",
+  "item.ind_nova.raw_platinum": "Рудная платина",
+  "item.ind_nova.raw_lead": "Рудный свинец",
+
+
+  "item.ind_nova.tin_ingot": "Оловяный слиток",
+  "item.ind_nova.tin_nugget": "Кусочек олова",
+
+  "item.ind_nova.platinum_ingot": "Платиновый слиток",
+  "item.ind_nova.platinum_nugget": "Кусочек платины",
+
+  "item.ind_nova.lead_ingot": "Свинцовый слиток",
+  "item.ind_nova.lead_nugget": "Кусочек свинца",
+
+  "item.ind_nova.steel_ingot": "Стальной слиток",
+  "item.ind_nova.steel_nugget": "Кусочек стали",
+
+
+  "item.ind_nova.lignite": "Бурый уголь",
+
+
+  "item.ind_nova.raw_flux": "Дроблёный известняк",
+  "item.ind_nova.flux": "Активный Флюс",
+
+  "item.ind_nova.iron_bloom": "Крица",
+
+
+  "item.ind_nova.stone_hammer": "Каменный молот",
+  "item.ind_nova.copper_hammer": "Медный молот",
+  "item.ind_nova.iron_hammer": "Железный молот",
+  "item.ind_nova.steel_hammer": "Стальной молот",
+  "item.ind_nova.diamond_hammer": "Алмазный молот",
+  "item.ind_nova.golden_hammer": "Золотой молот",
+  "item.ind_nova.netherite_hammer": "Незеритовый молот",
+
+  "item.ind_nova.steel_sword": "Стальной меч",
+  "item.ind_nova.steel_axe": "Стальной топор",
+  "item.ind_nova.steel_pickaxe": "Стальная кирка",
+  "item.ind_nova.steel_shovel": "Стальная лопата",
+  "item.ind_nova.steel_hoe": "Стальная мотыга",
+  "item.ind_nova.steel_spear": "Стальное копьё",
+
+
+
+  "block.ind_nova.marble": "Мрамор",
+  "block.ind_nova.gabbro": "Габбро",
+  "block.ind_nova.micaceous_schist": "Слюдистый сланец",
+  "block.ind_nova.limestone": "Известняк",
+
+  "block.ind_nova.marble_stairs": "Мраморный ступеньки",
+  "block.ind_nova.gabbro_stairs": "Ступеньки из габбро",
+  "block.ind_nova.micaceous_schist_stairs": "Слюдистосланцевые ступеньки",
+  "block.ind_nova.limestone_stairs": "Известняковые ступеньки",
+
+  "block.ind_nova.marble_slab": "Мраморная плита",
+  "block.ind_nova.gabbro_slab": "Плита из габбро",
+  "block.ind_nova.micaceous_schist_slab": "Слюдистосланцевая плита",
+  "block.ind_nova.limestone_slab": "Известняковая плита",
+
+
+  "block.ind_nova.tin_ore": "Оловяная руда",
+  "block.ind_nova.deepslate_tin_ore": "Оловоносный глубинный сланец",
+
+  "block.ind_nova.lignite_ore": "Руда бурого угля",
+  "block.ind_nova.deepslate_lignite_ore": "Глубиносланцевый бурый уголь",
+
+  "block.ind_nova.platinum_ore": "Платиновая руда",
+  "block.ind_nova.deepslate_platinum_ore": "Платиноносный глубинный сланец",
+
+  "block.ind_nova.lead_ore": "Свинцовая руда",
+  "block.ind_nova.deepslate_lead_ore": "Свинцовоносный глубинный сланец",
+
+
+  "block.ind_nova.raw_tin_block": "Блок рудного олова",
+  "block.ind_nova.tin_block": "Оловяный блок",
+
+  "block.ind_nova.raw_platinum_block": "Блок рудной платины",
+  "block.ind_nova.platinum_block": "Платиновый блок",
+
+  "block.ind_nova.raw_lead_block": "Блок рудного свинца",
+  "block.ind_nova.lead_block": "Свинцовый блок",
+
+
+  "block.ind_nova.lignite_block": "Блок бурого угля",
+
+
+
+  "creativetab.ind_nova.tools_tab": "Industria Nova: Инструменты",
+  "creativetab.ind_nova.ores_tab": "Industria Nova: Руды",
+  "creativetab.ind_nova.materials_tab": "Industria Nova: Материалы",
+  "creativetab.ind_nova.world_tab": "Industria Nova: Мир"
+}
