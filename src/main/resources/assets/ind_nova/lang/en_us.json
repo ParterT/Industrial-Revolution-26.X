@@ -13,12 +13,33 @@
   "item.ind_nova.lead_ingot": "Lead Ingot",
   "item.ind_nova.lead_nugget": "Lead Nugget",
 
+  "item.ind_nova.steel_ingot": "Steel Ingot",
+  "item.ind_nova.steel_nugget": "Steel Nugget",
+
 
   "item.ind_nova.lignite": "Lignite",
 
 
   "item.ind_nova.raw_flux": "Crushed Limestone",
   "item.ind_nova.flux": "Flux",
+
+  "item.ind_nova.iron_bloom": "Iron Bloom",
+
+
+  "item.ind_nova.stone_hammer": "Stone Hammer",
+  "item.ind_nova.copper_hammer": "Copper Hammer",
+  "item.ind_nova.iron_hammer": "Iron Hammer",
+  "item.ind_nova.steel_hammer": "Steel Hammer",
+  "item.ind_nova.diamond_hammer": "Diamond Hammer",
+  "item.ind_nova.golden_hammer": "Gold Hammer",
+  "item.ind_nova.netherite_hammer": "Netherite Hammer",
+
+  "item.ind_nova.steel_sword": "Steel Sword",
+  "item.ind_nova.steel_axe": "Steel Axe",
+  "item.ind_nova.steel_pickaxe": "Steel Pickaxe",
+  "item.ind_nova.steel_shovel": "Steel Shovel",
+  "item.ind_nova.steel_hoe": "Steel Hoe",
+  "item.ind_nova.steel_spear": "Steel Spear",
 
 
 
@@ -65,7 +86,7 @@
 
 
 
-  "creativetab.ind_nova.machines_tab": "Industria Nova: Machines",
+  "creativetab.ind_nova.tools_tab": "Industria Nova: Tools",
   "creativetab.ind_nova.ores_tab": "Industria Nova: Ores",
   "creativetab.ind_nova.materials_tab": "Industria Nova: Materials",
   "creativetab.ind_nova.world_tab": "Industria Nova: World"
