@@ -19,6 +19,9 @@ public class MItemsMetals {
     public static final  DeferredItem<Item> LEAD_INGOT = ITEMS_METALS.registerSimpleItem("lead_ingot");
     public static final  DeferredItem<Item> LEAD_NUGGET = ITEMS_METALS.registerSimpleItem("lead_nugget");
 
+    public static final  DeferredItem<Item> STEEL_INGOT = ITEMS_METALS.registerSimpleItem("steel_ingot");
+    public static final  DeferredItem<Item> STEEL_NUGGET = ITEMS_METALS.registerSimpleItem("steel_nugget");
+
 
     public static void register(IEventBus eventBus) {
         ITEMS_METALS.register(eventBus);
