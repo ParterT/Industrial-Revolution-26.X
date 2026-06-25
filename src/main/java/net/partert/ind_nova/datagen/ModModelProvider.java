@@ -14,6 +14,7 @@ import net.partert.ind_nova.item.basic.MItemsFuels;
 import net.partert.ind_nova.item.basic.MItemsMaterials;
 import net.partert.ind_nova.item.basic.MItemsMetals;
 import net.partert.ind_nova.item.basic.MItemsOres;
+import net.partert.ind_nova.item.tool.MItemsTools;
 
 public class ModModelProvider extends ModelProvider {
     public ModModelProvider(PackOutput output) {
@@ -38,12 +39,45 @@ public class ModModelProvider extends ModelProvider {
         itemModel.generateFlatItem(MItemsMetals.LEAD_INGOT.get(), ModelTemplates.FLAT_ITEM);
         itemModel.generateFlatItem(MItemsMetals.LEAD_NUGGET.get(), ModelTemplates.FLAT_ITEM);
 
+        itemModel.generateFlatItem(MItemsMetals.STEEL_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModel.generateFlatItem(MItemsMetals.STEEL_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+
         /* MATERIALS */
         itemModel.generateFlatItem(MItemsMaterials.RAW_FLUX.get(), ModelTemplates.FLAT_ITEM);
         itemModel.generateFlatItem(MItemsMaterials.FLUX.get(), ModelTemplates.FLAT_ITEM);
 
+        itemModel.generateFlatItem(MItemsMaterials.IRON_BLOOM.get(), ModelTemplates.FLAT_ITEM);
+
         /* FUELS */
         itemModel.generateFlatItem(MItemsFuels.LIGNITE.get(), ModelTemplates.FLAT_ITEM);
+
+        //* TOOLS *//
+        /* HAMMERS */
+        itemModel.generateFlatItem(MItemsTools.STONE_HAMMER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModel.generateFlatItem(MItemsTools.COPPER_HAMMER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModel.generateFlatItem(MItemsTools.IRON_HAMMER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModel.generateFlatItem(MItemsTools.STEEL_HAMMER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModel.generateFlatItem(MItemsTools.DIAMOND_HAMMER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModel.generateFlatItem(MItemsTools.GOLDEN_HAMMER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModel.generateFlatItem(MItemsTools.NETHERITE_HAMMER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        /* SWORDS */
+        itemModel.generateFlatItem(MItemsTools.STEEL_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        /* AXES */
+        itemModel.generateFlatItem(MItemsTools.STEEL_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        /* PICKAXES */
+        itemModel.generateFlatItem(MItemsTools.STEEL_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        /* SHOVELS */
+        itemModel.generateFlatItem(MItemsTools.STEEL_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        /* HOES */
+        itemModel.generateFlatItem(MItemsTools.STEEL_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        /* SPEARS */
+        itemModel.generateSpear(MItemsTools.STEEL_SPEAR.get());
 
 
         //* BLOCKS *//
@@ -83,6 +117,7 @@ public class ModModelProvider extends ModelProvider {
 
         blockModels.createTrivialCube(MBlocksMetals.RAW_LEAD_BLOCK.get());
         blockModels.createTrivialCube(MBlocksMetals.LEAD_BLOCK.get());
+
 
         /* FUELS */
         blockModels.createTrivialCube(MBlocksFuels.LIGNITE_BLOCK.get());

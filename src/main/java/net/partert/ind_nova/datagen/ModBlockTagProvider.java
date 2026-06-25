@@ -9,7 +9,6 @@ import net.partert.ind_nova.block.basic.MBlocksFuels;
 import net.partert.ind_nova.block.basic.MBlocksMetals;
 import net.partert.ind_nova.block.basic.MBlocksOres;
 import net.partert.ind_nova.block.basic.MBlocksStones;
-import net.partert.ind_nova.item.basic.MItemsOres;
 import net.partert.ind_nova.tags.MTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -87,15 +86,48 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             .add(MBlocksMetals.RAW_LEAD_BLOCK.get());
 
 
-    tag(BlockTags.NEEDS_DIAMOND_TOOL)
+    tag(BlockTags.NEEDS_DIAMOND_TOOL);
             /* ORES */
-            .add(MBlocksOres.PLATINUM_ORE.get())
-            .add(MBlocksOres.DEEPSLATE_PLATINUM_ORE.get())
 
             /* METALS */
+
+    tag(MTags.Blocks.NEEDS_STEEL_TOOL)
+            .add(MBlocksOres.PLATINUM_ORE.get())
+            .add(MBlocksOres.DEEPSLATE_PLATINUM_ORE.get())
             .add(MBlocksMetals.PLATINUM_BLOCK.get())
             .add(MBlocksMetals.RAW_PLATINUM_BLOCK.get());
+
+    tag(MTags.Blocks.INCORRECT_FOR_STEEL_TOOL)
+            .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+    tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+            .add(MBlocksOres.PLATINUM_ORE.get())
+            .add(MBlocksOres.DEEPSLATE_PLATINUM_ORE.get())
+            .add(MBlocksMetals.RAW_PLATINUM_BLOCK.get())
+            .add(MBlocksMetals.PLATINUM_BLOCK.get());
+
+    tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
+            .add(MBlocksOres.PLATINUM_ORE.get())
+            .add(MBlocksOres.DEEPSLATE_PLATINUM_ORE.get())
+            .add(MBlocksMetals.RAW_PLATINUM_BLOCK.get())
+            .add(MBlocksMetals.PLATINUM_BLOCK.get());
+
+    tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
+            .add(MBlocksOres.PLATINUM_ORE.get())
+            .add(MBlocksOres.DEEPSLATE_PLATINUM_ORE.get())
+            .add(MBlocksMetals.RAW_PLATINUM_BLOCK.get())
+            .add(MBlocksMetals.PLATINUM_BLOCK.get());
+
+    tag(BlockTags.INCORRECT_FOR_GOLD_TOOL)
+            .add(MBlocksOres.PLATINUM_ORE.get())
+            .add(MBlocksOres.DEEPSLATE_PLATINUM_ORE.get())
+            .add(MBlocksMetals.RAW_PLATINUM_BLOCK.get())
+            .add(MBlocksMetals.PLATINUM_BLOCK.get());
+
+    tag(BlockTags.INCORRECT_FOR_COPPER_TOOL)
+            .add(MBlocksOres.PLATINUM_ORE.get())
+            .add(MBlocksOres.DEEPSLATE_PLATINUM_ORE.get())
+            .add(MBlocksMetals.RAW_PLATINUM_BLOCK.get())
+            .add(MBlocksMetals.PLATINUM_BLOCK.get());
     }
-
-
 }

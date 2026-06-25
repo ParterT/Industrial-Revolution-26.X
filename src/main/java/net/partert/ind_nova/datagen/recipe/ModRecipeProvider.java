@@ -10,20 +10,26 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.common.Tags;
 import net.partert.ind_nova.IndustriaNova;
 import net.partert.ind_nova.block.basic.MBlocksFuels;
 import net.partert.ind_nova.block.basic.MBlocksMetals;
 import net.partert.ind_nova.block.basic.MBlocksOres;
 import net.partert.ind_nova.block.basic.MBlocksStones;
 import net.partert.ind_nova.item.basic.MItemsFuels;
+import net.partert.ind_nova.item.basic.MItemsMaterials;
 import net.partert.ind_nova.item.basic.MItemsMetals;
 import net.partert.ind_nova.item.basic.MItemsOres;
+import net.partert.ind_nova.item.tool.MItemsTools;
+import net.partert.ind_nova.tags.MTags;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -66,13 +72,15 @@ public class ModRecipeProvider extends RecipeProvider {
         modBlockStorageRecipe(RecipeCategory.MISC, MItemsMetals.LEAD_INGOT, RecipeCategory.BUILDING_BLOCKS, MBlocksMetals.LEAD_BLOCK);
         modBlockStorageRecipe(RecipeCategory.MISC, MItemsMetals.LEAD_NUGGET, RecipeCategory.MISC, MItemsMetals.LEAD_INGOT);
 
+        modBlockStorageRecipe(RecipeCategory.MISC, MItemsMetals.STEEL_NUGGET, RecipeCategory.MISC, MItemsMetals.STEEL_INGOT);
+
 
         oreSmelting(List.of(MItemsOres.RAW_TIN, MBlocksOres.TIN_ORE, MBlocksOres.DEEPSLATE_TIN_ORE),
                 RecipeCategory.MISC, CookingBookCategory.MISC, MItemsMetals.TIN_INGOT.get(),
-                0.25f, 200, "azurite_ingot");
+                0.25f, 200, "tin_ingot");
         oreBlasting(List.of(MItemsOres.RAW_TIN, MBlocksOres.TIN_ORE, MBlocksOres.DEEPSLATE_TIN_ORE),
                 RecipeCategory.MISC, CookingBookCategory.MISC, MItemsMetals.TIN_INGOT.get(),
-                0.25f, 100, "azurite_ingot");
+                0.25f, 100, "tin_ingot");
 
         oreSmelting(List.of(MBlocksOres.LIGNITE_ORE, MBlocksOres.DEEPSLATE_LIGNITE_ORE),
                 RecipeCategory.MISC, CookingBookCategory.MISC, MItemsFuels.LIGNITE.get(),
@@ -83,10 +91,14 @@ public class ModRecipeProvider extends RecipeProvider {
 
         oreSmelting(List.of(MItemsOres.RAW_LEAD, MBlocksOres.LEAD_ORE, MBlocksOres.DEEPSLATE_LEAD_ORE),
                 RecipeCategory.MISC, CookingBookCategory.MISC, MItemsMetals.LEAD_INGOT.get(),
-                0.25f, 200, "azurite_ingot");
+                0.25f, 200, "lead_ingot");
         oreBlasting(List.of(MItemsOres.RAW_LEAD, MBlocksOres.LEAD_ORE, MBlocksOres.DEEPSLATE_LEAD_ORE),
                 RecipeCategory.MISC, CookingBookCategory.MISC, MItemsMetals.LEAD_INGOT.get(),
-                0.25f, 100, "azurite_ingot");
+                0.25f, 100, "lead_ingot");
+
+        oreBlasting(List.of(Items.IRON_INGOT),
+                RecipeCategory.MISC, CookingBookCategory.MISC, MItemsMetals.STEEL_INGOT.get(),
+                0.25f, 200, "steel_ingot");
 
 
         stairBuilder(MBlocksStones.MARBLE_STAIRS.get(), Ingredient.of(MBlocksStones.MARBLE))
@@ -106,6 +118,107 @@ public class ModRecipeProvider extends RecipeProvider {
         slab(RecipeCategory.BUILDING_BLOCKS, MBlocksStones.GABBRO_SLAB.get(), MBlocksStones.GABBRO.get());
         slab(RecipeCategory.BUILDING_BLOCKS, MBlocksStones.SCHIST_SLAB.get(), MBlocksStones.SCHIST.get());
         slab(RecipeCategory.BUILDING_BLOCKS, MBlocksStones.LIMESTONE_SLAB.get(), MBlocksStones.LIMESTONE.get());
+
+        shaped(RecipeCategory.TOOLS, MItemsTools.STONE_HAMMER.get())
+                .pattern("III")
+                .pattern("III")
+                .pattern(" S ")
+                .define('I', Items.COBBLESTONE).define('S', Items.STICK)
+                .group("stone_hammer")
+                .unlockedBy(getHasName(Items.COBBLESTONE), has(Items.COBBLESTONE))
+                .save(output);
+        shaped(RecipeCategory.TOOLS, MItemsTools.COPPER_HAMMER.get())
+                .pattern("III")
+                .pattern("III")
+                .pattern(" S ")
+                .define('I', Items.COPPER_INGOT).define('S', Items.STICK)
+                .group("copper_hammer")
+                .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(output);
+        shaped(RecipeCategory.TOOLS, MItemsTools.IRON_HAMMER.get())
+                .pattern("III")
+                .pattern("III")
+                .pattern(" S ")
+                .define('I', Items.IRON_INGOT).define('S', Items.STICK)
+                .group("iron_hammer")
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(output);
+        shaped(RecipeCategory.TOOLS, MItemsTools.STEEL_HAMMER.get())
+                .pattern("III")
+                .pattern("III")
+                .pattern(" S ")
+                .define('I', MItemsMetals.STEEL_INGOT.get()).define('S', Items.STICK)
+                .group("steel_hammer")
+                .unlockedBy(getHasName(MItemsMetals.STEEL_INGOT.get()), has(MItemsMetals.STEEL_INGOT))
+                .save(output);
+        shaped(RecipeCategory.TOOLS, MItemsTools.DIAMOND_HAMMER.get())
+                .pattern("DDD")
+                .pattern("DDD")
+                .pattern(" S ")
+                .define('D', Items.DIAMOND).define('S', Items.STICK)
+                .group("diamond_hammer")
+                .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                .save(output);
+        shaped(RecipeCategory.TOOLS, MItemsTools.GOLDEN_HAMMER.get())
+                .pattern("III")
+                .pattern("III")
+                .pattern(" S ")
+                .define('I', Items.GOLD_INGOT).define('S', Items.STICK)
+                .group("golden_hammer")
+                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                .save(output);
+
+        netheriteSmithing(MItemsTools.DIAMOND_HAMMER.get(), RecipeCategory.TOOLS, MItemsTools.NETHERITE_HAMMER.get());
+
+
+        shaped(RecipeCategory.TOOLS, MItemsTools.STEEL_SWORD.get())
+                .pattern("I")
+                .pattern("I")
+                .pattern("S")
+                .define('I', MItemsMetals.STEEL_INGOT).define('S', Items.STICK)
+                .group("steel_sword")
+                .unlockedBy(getHasName(MItemsMetals.STEEL_INGOT.get()), has(MItemsMetals.STEEL_INGOT))
+                .save(output);
+        shaped(RecipeCategory.TOOLS, MItemsTools.STEEL_AXE.get())
+                .pattern("II")
+                .pattern("IS")
+                .pattern(" S")
+                .define('I', MItemsMetals.STEEL_INGOT).define('S', Items.STICK)
+                .group("steel_axe")
+                .unlockedBy(getHasName(MItemsMetals.STEEL_INGOT.get()), has(MItemsMetals.STEEL_INGOT))
+                .save(output);
+        shaped(RecipeCategory.TOOLS, MItemsTools.STEEL_PICKAXE.get())
+                .pattern("III")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('I', MItemsMetals.STEEL_INGOT).define('S', Items.STICK)
+                .group("steel_pickaxe")
+                .unlockedBy(getHasName(MItemsMetals.STEEL_INGOT.get()), has(MItemsMetals.STEEL_INGOT))
+                .save(output);
+        shaped(RecipeCategory.TOOLS, MItemsTools.STEEL_SHOVEL.get())
+                .pattern("I")
+                .pattern("S")
+                .pattern("S")
+                .define('I', MItemsMetals.STEEL_INGOT).define('S', Items.STICK)
+                .group("steel_shovel")
+                .unlockedBy(getHasName(MItemsMetals.STEEL_INGOT.get()), has(MItemsMetals.STEEL_INGOT))
+                .save(output);
+        shaped(RecipeCategory.TOOLS, MItemsTools.STEEL_HOE.get())
+                .pattern("II")
+                .pattern(" S")
+                .pattern(" S")
+                .define('I', MItemsMetals.STEEL_INGOT).define('S', Items.STICK)
+                .group("steel_hoe")
+                .unlockedBy(getHasName(MItemsMetals.STEEL_INGOT.get()), has(MItemsMetals.STEEL_INGOT))
+                .save(output);
+        shaped(RecipeCategory.TOOLS, MItemsTools.STEEL_SPEAR.get())
+                .pattern("  I")
+                .pattern(" S ")
+                .pattern("S  ")
+                .define('I', MItemsMetals.STEEL_INGOT).define('S', Items.STICK)
+                .group("steel_spear")
+                .unlockedBy(getHasName(MItemsMetals.STEEL_INGOT.get()), has(MItemsMetals.STEEL_INGOT))
+                .save(output);
     }
 
 
