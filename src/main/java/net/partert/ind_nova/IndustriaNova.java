@@ -9,7 +9,8 @@ import net.partert.ind_nova.item.basic.MItemsFuels;
 import net.partert.ind_nova.item.basic.MItemsMaterials;
 import net.partert.ind_nova.item.basic.MItemsMetals;
 import net.partert.ind_nova.item.basic.MItemsOres;
-import net.partert.ind_nova.tabs.MTabsMachines;
+import net.partert.ind_nova.item.tool.MItemsTools;
+import net.partert.ind_nova.tabs.MTabsTools;
 import net.partert.ind_nova.tabs.MTabsMaterials;
 import net.partert.ind_nova.tabs.MTabsOres;
 import net.partert.ind_nova.tabs.MTabsWorld;
@@ -40,6 +41,7 @@ public class IndustriaNova {
         MItemsMetals.register(modEventBus);
         MItemsOres.register(modEventBus);
         MItemsMaterials.register(modEventBus);
+        MItemsTools.register(modEventBus);
 
         /* BLOCKS REGISTER */
         MBlocksStones.register(modEventBus);
@@ -50,7 +52,7 @@ public class IndustriaNova {
         /* CREATIVE TABS REGISTER */
         MTabsOres.register(modEventBus);
         MTabsMaterials.register(modEventBus);
-        MTabsMachines.register(modEventBus);
+        MTabsTools.register(modEventBus);
         MTabsWorld.register(modEventBus);
 
         /* ATTACHMENTS */

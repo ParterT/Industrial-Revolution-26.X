@@ -8,6 +8,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.partert.ind_nova.IndustriaNova;
 import net.partert.ind_nova.item.basic.MItemsMaterials;
+import net.partert.ind_nova.item.basic.MItemsMetals;
 
 import java.util.function.Supplier;
 
@@ -22,6 +23,9 @@ public class MTabsMaterials {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(MItemsMaterials.RAW_FLUX);
                         output.accept(MItemsMaterials.FLUX);
+                        output.accept(MItemsMaterials.IRON_BLOOM);
+                        output.accept(MItemsMetals.STEEL_INGOT);
+                        output.accept(MItemsMetals.STEEL_NUGGET);
                     }).build());
 
     public static void register(IEventBus eventBus) {
