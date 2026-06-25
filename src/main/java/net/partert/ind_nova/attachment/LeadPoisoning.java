@@ -43,12 +43,21 @@ public class LeadPoisoning {
     }
 
     private static void LeadEffect(Player player, int leadLVL) {
-        if (leadLVL > 1000) {
+        if (leadLVL > 5000) {
+            player.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 100, 3, true, false));
+            player.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 100, 2, true, false));
+            player.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 100, 1, true, false));
+            player.addEffect(new MobEffectInstance(MobEffects.MINING_FATIGUE, 100, 2, true, false));
+            if (player.tickCount % 20 == 0) {
+                player.hurt(player.damageSources().magic(), 3f);
+            }
+        }
+        else if (leadLVL > 1000) {
             player.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 100, 2, true, false));
             player.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 100, 1, true, false));
             player.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 100, 0, true, false));
 
-            if (player.tickCount % 100 == 0) {
+            if (player.tickCount % 40 == 0) {
                 player.hurt(player.damageSources().magic(), 2f);
             }
         }
